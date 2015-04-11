@@ -46,7 +46,7 @@ function addScript(fileUrl) {
 /*insert css and script to webview*/
 webview.addEventListener('loadcommit', function () {
     addScript("/js/inject.js");
-    addCss('/styles/inject.css');
+    addCss('/css/inject.css');
 });
 
 /*fit width, height with window*/
