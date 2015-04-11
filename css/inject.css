@@ -14,7 +14,7 @@
 .mobile-login-form {
     display: block;
     overflow: hidden;
-    margin-top: 15px;
+    padding-top: 80px !important;
 }
 
 /*#message-reply-composer {*/
