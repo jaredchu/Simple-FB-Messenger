@@ -1,0 +1,28 @@
+#header {
+    top: 0;
+    position: fixed;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#mJewelNav ._4g34:nth-child(1), #mJewelNav ._4g34:nth-child(2), #mJewelNav ._4g34:nth-child(4), #mJewelNav ._4g34:nth-child(5) {
+    display: none !important;
+}
+
+.mobile-login-form {
+    display: block;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+/*#message-reply-composer {*/
+/*position: fixed;*/
+/*bottom: 0;*/
+/*width: 100%;*/
+/*}*/
+
+/*#messageGroup {*/
+/*margin-bottom: 80px;*/
+/*}*/
