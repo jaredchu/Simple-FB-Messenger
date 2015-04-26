@@ -54,4 +54,12 @@ menuButton = menuDiv.getElementsByTagName('a')[0];
 menuDiv.onclick = function () {
     menuButton.click();
     //console.log("menu");
+    setTimeout(setOptionsTabScrollable, 500);
 };
+
+/*fix options tab scrollable*/
+function setOptionsTabScrollable() {
+    options_tab = document.getElementById('u_0_8');
+    options_tab.style.overflow = 'scroll';
+    options_tab.style.height = document.documentElement.clientHeight + 'px';
+}
