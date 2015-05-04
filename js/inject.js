@@ -29,7 +29,7 @@ while (delay <= 5000) {
 navbar = document.getElementById('mJewelNav');
 tabs = navbar.getElementsByClassName('_4g34');
 
-messageDiv = tabs[2].getElementsByTagName('div')[0];
+messageDiv = tabs[3].getElementsByTagName('div')[0];
 messButton = messageDiv.getElementsByTagName('a')[0];
 
 setInterval(function () {
@@ -49,11 +49,15 @@ setInterval(function () {
 }, 1000);
 
 
-menuDiv = tabs[5];
+menuDiv = tabs[8];
 menuButton = menuDiv.getElementsByTagName('a')[0];
 menuDiv.onclick = function () {
     menuButton.click();
     //console.log("menu");
+    setTimeout(setOptionsTabScrollable, 500);
+};
+
+window.onresize = function () {
     setTimeout(setOptionsTabScrollable, 500);
 };
 
