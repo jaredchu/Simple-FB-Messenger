@@ -63,7 +63,13 @@ window.onresize = function () {
 
 /*fix options tab scrollable*/
 function setOptionsTabScrollable() {
-    options_tab = document.getElementById('u_0_8');
-    options_tab.style.overflow = 'scroll';
-    options_tab.style.height = document.documentElement.clientHeight + 'px';
+    visible_page = document.getElementsByClassName('popover_visible');
+    if (visible_page != null && visible_page.type != 'undefined') {
+        i = 0;
+        while (i < visible_page.length) {
+            visible_page[i].style.overflow = 'scroll';
+            visible_page[i].style.height = document.documentElement.clientHeight + 'px';
+            i++;
+        }
+    }
 }
